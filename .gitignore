@@ -1,0 +1,9 @@
+node_modules/*
+
+public/fbx_animations/*
+!public/fbx_animations/.gitkeep
+
+public/vrm_models/*
+!public/vrm_models/.gitkeep
+
+!**/.gitkeep
