@@ -56,7 +56,7 @@ async function init() {
   vrm.scene.position.set(-0.15, -0.8, 0); // -1.4
   vrm.scene.scale.setScalar(1.5);
   vrm.scene.rotation.y = 0.35;
-  camera.position.set(0.01462, 0.95603, 2.3935) 
+  camera.position.set(0.01462, 0.95603, 2.3935) // camera.position.toArray() -> Camera debug
   camera.lookAt(-0.05, 1.0, 0.5); // Same as orbit control 
   // camera.lookAt(0, 1.0, 0.5);
 
