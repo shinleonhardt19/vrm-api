@@ -26,7 +26,7 @@ window.camera = camera;
 // const controls = new OrbitControls(camera, renderer.domElement);
 // controls.enableDamping = true; 
 // controls.dampingFactor = 0.05;
-// controls.target.set(-0.138, 1.0, 0.5); 
+// controls.target.set(-0.05, 1.0, 0.5); 
 
 let vrm;
 let controller;
@@ -53,10 +53,11 @@ async function init() {
   lookAtTarget.position.set(0, 1.5, 1);
   scene.add(lookAtTarget);
   vrm.lookAt.target = lookAtTarget;
-  vrm.scene.position.set(0, -0.8, 0); // -1.4
+  vrm.scene.position.set(-0.15, -0.8, 0); // -1.4
   vrm.scene.scale.setScalar(1.5);
-  camera.position.set(-0.9, 1.017, 2.338) 
-  camera.lookAt(-0.138, 1.0, 0.5); 
+  vrm.scene.rotation.y = 0.35;
+  camera.position.set(0.01462, 0.95603, 2.3935) 
+  camera.lookAt(-0.05, 1.0, 0.5); // Same as orbit control 
   // camera.lookAt(0, 1.0, 0.5);
 
   // Initialize standard controllers
